@@ -5,6 +5,7 @@ require 'sinatra'
 
 set :bind, '0.0.0.0'
 set :port, 8080
+set :public_folder, File.dirname(__FILE__) + '/public'
 
 get '/upgrade.json' do
   get_version_config
