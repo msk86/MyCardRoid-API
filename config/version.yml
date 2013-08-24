@@ -1,6 +1,6 @@
 version: &base
   latest_version: '1.20'
-  upgrade_url: http://localhost:4567/YGORoid_1.20.apk
+  upgrade_url: http://112.124.4.110:8080/YGORoid_1.20.apk
 
 zh:
   <<: *base

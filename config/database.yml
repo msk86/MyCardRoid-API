@@ -1,7 +1,7 @@
 zh:
   size: 2158592
-  upgrade_url: http://localhost/zh/cards.cdb
+  upgrade_url: http://112.124.4.110:8080/zh/cards.cdb
 
 en:
-  size: 2158721
-  upgrade_url: http://localhost/en/cards.cdb
+  size: 2158592
+  upgrade_url: http://112.124.4.110:8080/zh/cards.cdb
