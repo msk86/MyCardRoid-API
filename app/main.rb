@@ -3,6 +3,9 @@ require 'json'
 require 'yaml'
 require 'sinatra'
 
+set :bind, '0.0.0.0'
+set :port, 8080
+
 get '/upgrade.json' do
   get_version_config
 end
