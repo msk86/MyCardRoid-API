@@ -1,0 +1,11 @@
+version: &base
+  latest_version: '1.20'
+  upgrade_url: http://localhost:4567/YGORoid_1.20.apk
+
+zh:
+  <<: *base
+  desc: 1. 增加简易反口胡卡查。\n2. 增加组卡器功能。
+
+en:
+  <<: *base
+  desc: 1. Add a card searcher.\n2. Add a deck builder.
