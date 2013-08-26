@@ -3,7 +3,7 @@ require 'json'
 require 'yaml'
 require 'sinatra'
 
-class YGORoid < Sinatra::Application
+class Main < Sinatra::Application
 
   set :public_folder, File.dirname(__FILE__) + '/public'
 

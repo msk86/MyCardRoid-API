@@ -13,5 +13,5 @@ wait: 30
 servers: 1
 daemonize: true
 rackup: config.ru
-adapter: rake
+adapter: rack
 

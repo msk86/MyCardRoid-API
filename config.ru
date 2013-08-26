@@ -1,5 +1,5 @@
 # This file is used by Rack-based servers to start the application.
 
-require ::File.expand_path('app',  __FILE__)
+require File.dirname(__FILE__) + "/app/main"
 
-run YGORoid.new
+run Main.new
