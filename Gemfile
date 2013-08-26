@@ -3,6 +3,7 @@ source 'http://ruby.taobao.org/'
 gem 'sinatra'
 gem 'thin'
 gem 'json'
+gem 'sqlite3'
 
 # Deploy with Capistrano
 #group :deploy do
