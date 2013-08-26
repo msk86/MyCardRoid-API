@@ -1,0 +1,18 @@
+---
+environment: production
+address: 0.0.0.0
+port: 8080
+timeout: 30
+log: log/thin.log
+pid: tmp/pids/thin.pid
+socket: tmp/roid.sock
+max_conns: 1024
+max_persistent_conns: 100
+require: []
+wait: 30
+servers: 1
+daemonize: true
+#rackup: config.ru
+adapter: rake
+
+#please use dev_thin.yml as thin configuration in dev env.
