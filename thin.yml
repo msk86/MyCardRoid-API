@@ -12,7 +12,6 @@ require: []
 wait: 30
 servers: 1
 daemonize: true
-#rackup: config.ru
+rackup: config.ru
 adapter: rake
 
-#please use dev_thin.yml as thin configuration in dev env.
