@@ -5,7 +5,6 @@ port: 8080
 timeout: 30
 log: log/thin.log
 pid: tmp/pids/thin.pid
-socket: tmp/roid.sock
 max_conns: 1024
 max_persistent_conns: 100
 require: []
