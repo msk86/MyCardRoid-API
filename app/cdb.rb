@@ -18,6 +18,7 @@ def create_cards_cdb file, language = 'zh'
   db.execute("CREATE TABLE datas(id integer primary key, ot integer, alias integet, setcode integer, type integer, atk integer, def integer, level integer, race integer, attribute integer, category integer)")
   datas_uri = URI("http://my-card.in/cards.json")
   datas = JSON.parse Net::HTTP.get datas_uri
+  count = datas.length
   import_json_data db, 'datas', datas
 
   p "Start loading texts under #{language} from my-card api..."
@@ -29,7 +30,7 @@ def create_cards_cdb file, language = 'zh'
 
   p "Update config in database.yml..."
 
-  update_database_yml file, language
+  update_database_yml file, count, language
 
   p "Done!"
 end
@@ -52,9 +53,10 @@ def import_json_data db, table, data
   end
 end
 
-def update_database_yml file, language
+def update_database_yml file, count, language
   db_config = YAML::load(File.read('config/database.yml'))
   db_config[language]['size'] = File.size "app/public/#{language}/#{file}.cdb"
+  db_config[language]['count'] = count
   db_config[language]['upgrade_url'] = "#{db_config['base_url']}/#{language}/#{file}.cdb"
   File.write('config/database.yml', db_config.to_yaml)
 end

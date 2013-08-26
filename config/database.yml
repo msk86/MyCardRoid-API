@@ -1,8 +1,9 @@
 ---
 base_url: http://112.124.4.110:8080
 zh:
-  size: 2158592
+  size: 1748992
   upgrade_url: http://112.124.4.110:8080/zh/cards.cdb
+  count: 6234
 en:
   size: 2158592
   upgrade_url: http://112.124.4.110:8080/zh/cards.cdb
