@@ -61,8 +61,4 @@ def update_database_yml file, count, language
   File.write('config/database.yml', db_config.to_yaml)
 end
 
-def delete_previous_cdb
-
-end
-
 run
