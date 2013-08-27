@@ -5,6 +5,7 @@ require 'yaml'
 
 def run
   file_name = "cards-#{Time.now.year}-#{Time.now.month}-#{Time.now.day}"
+  p "Creating #{file_name}..."
   create_cards_cdb file_name, 'zh'
 end
 
@@ -21,6 +22,7 @@ def create_cards_cdb file, language = 'zh'
 
 
   p "Creating #{file}.cdb under #{language}..."
+  p "File path is [#{File.absolute_path "app/public/#{language}/#{file}.cdb"}]."
   db = SQLite3::Database.new("app/public/#{language}/#{file}.cdb")
   db.execute("CREATE TABLE datas(id integer primary key, ot integer, alias integet, setcode integer, type integer, atk integer, def integer, level integer, race integer, attribute integer, category integer)")
   import_json_data db, 'datas', datas
