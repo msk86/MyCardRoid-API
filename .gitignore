@@ -1,3 +1,6 @@
 .idea/
 *.cdb
+*.apk
+log/
+tmp/
 config/database.yml
