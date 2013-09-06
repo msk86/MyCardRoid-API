@@ -1,11 +1,11 @@
 version: &base
-  latest_version: '1.20'
-  upgrade_url: http://my-card.in/roid/YGORoid_1.20.apk
+  latest_version: '1.21'
+  upgrade_url: http://my-card.in/roid/YGORoid_1.21.apk
 
 zh:
   <<: *base
-  desc: 1. 增加简易反口胡卡查。\n2. 增加组卡器功能。
+  desc: 1. 自动更新数据库和卡图。\n2. 国际化，支持英文系统。
 
 en:
   <<: *base
-  desc: 1. Add a card searcher.\n2. Add a deck builder.
+  desc: 1. Auto update database and pics. .\n2. Interationalization, Support english OS.
