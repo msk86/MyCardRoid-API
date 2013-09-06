@@ -7,6 +7,7 @@ def run
   file_name = "cards-#{Time.now.year}-#{Time.now.month}-#{Time.now.day}"
   p "Creating #{file_name}..."
   create_cards_cdb file_name, 'zh'
+  create_cards_cdb file_name, 'en'
 end
 
 def create_cards_cdb file, language = 'zh'
@@ -45,7 +46,7 @@ def import_json_data db, table, data
   data.each do |record|
     values = []
     columns.each do |column|
-      values << "'#{record[field_map[table][column]]}'"
+      values << "\"#{record[field_map[table][column]].to_s.gsub(/"/, "'")}\""
     end
     value_str = "(#{values.join ', '})"
     string = "INSERT INTO #{table} #{column_str} values #{value_str}"
