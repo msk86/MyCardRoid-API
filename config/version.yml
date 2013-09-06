@@ -1,11 +1,11 @@
 version: &base
-  latest_version: '1.21'
+  latest_version: '1.22'
   upgrade_url: http://my-card.in/roid/latest/MC_YGORoid.apk
 
 zh:
   <<: *base
-  desc: 1. 自动更新数据库和卡图。\n2. 国际化，支持英文系统。
+  desc: 1. 自动更新数据库和卡图。\n2. 修正英语系统下搜索速度慢的问题。
 
 en:
   <<: *base
-  desc: 1. Auto update database and pics. .\n2. Interationalization, Support english OS.
+  desc: 1. Auto update database and pics.\n2. Speed up searching card speed.
