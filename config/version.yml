@@ -1,6 +1,6 @@
 version: &base
   latest_version: '1.23'
-  upgrade_url: http://my-card.in/roid/latest/YGORoid.apk
+  upgrade_url: http://my-card.in/roid/latest/MC_YGORoid.apk
 
 zh:
   <<: *base
