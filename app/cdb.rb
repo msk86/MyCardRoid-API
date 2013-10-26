@@ -16,12 +16,11 @@ def create_cards_cdb file, language
   p "Loading datas from my-card api..."
   datas_uri = URI("http://my-card.in/cards.json")
   datas = JSON.parse Net::HTTP.get datas_uri
-  count = datas.length
 
   p "Loading texts under #{language} from my-card api..."
   texts_uri = URI("http://my-card.in/cards_#{language}.json")
   texts = JSON.parse Net::HTTP.get texts_uri
-
+  count = texts.length
 
   p "Creating #{file}.cdb under #{language}..."
   p "File path is [#{File.absolute_path "app/public/#{language}/#{file}.cdb"}]."

@@ -1,15 +1,15 @@
 version: &base
-  latest_version: '1.22'
-  upgrade_url: http://my-card.in/roid/latest/MC_YGORoid.apk
+  latest_version: '1.23'
+  upgrade_url: http://my-card.in/roid/latest/YGORoid.apk
 
 zh:
   <<: *base
-  desc: 1. 自动更新数据库和卡图。\n2. 修正英语系统下搜索速度慢的问题。
+  desc: 1. 下载图片速度提升，支持后台下载。\n2. 增加繁体中文支持。
 
 en:
   <<: *base
-  desc: 1. Auto update database and pics.\n2. Speed up searching card speed.
+  desc: 1. Speed up download pictures.\n2. Support chinese(TW).
 
 zh-TW:
   <<: *base
-  desc: 1. 自動更新數據庫和卡圖。\n2. 修正英文系統下搜索速度慢的問題。
+  desc: 1. 下載圖片速度提升，支持後臺下載。\n2. 增加繁體中文支持。
