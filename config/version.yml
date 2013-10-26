@@ -9,3 +9,7 @@ zh:
 en:
   <<: *base
   desc: 1. Auto update database and pics.\n2. Speed up searching card speed.
+
+zh-TW:
+  <<: *base
+  desc: 1. 自動更新數據庫和卡圖。\n2. 修正英文系統下搜索速度慢的問題。
