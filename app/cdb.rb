@@ -6,9 +6,9 @@ require 'yaml'
 def run
   file_name = "cards-#{Time.now.year}-#{Time.now.month}-#{Time.now.day}"
   p "Creating #{file_name}..."
-  #create_cards_cdb file_name, 'zh'
+  create_cards_cdb file_name, 'zh'
   create_cards_cdb file_name, 'zh-TW'
-  #create_cards_cdb file_name, 'en'
+  create_cards_cdb file_name, 'en'
 end
 
 def create_cards_cdb file, language
