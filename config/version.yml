@@ -10,6 +10,10 @@ en:
   <<: *base
   desc: 1. Speed up download pictures.\n2. Support chinese(TW).
 
+jp:
+  <<: *base
+  desc: 1. 画像ダウンロードの速度を改善。\n2. 中国語（台湾）を支持。
+
 zh-TW:
   <<: *base
   desc: 1. 下載圖片速度提升，支持後臺下載。\n2. 增加繁體中文支持。

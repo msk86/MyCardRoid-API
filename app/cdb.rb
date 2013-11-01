@@ -9,6 +9,7 @@ def run
   create_cards_cdb file_name, 'zh'
   create_cards_cdb file_name, 'zh-TW'
   create_cards_cdb file_name, 'en'
+  create_cards_cdb file_name, 'jp'
 end
 
 def create_cards_cdb file, language
