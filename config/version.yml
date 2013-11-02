@@ -1,19 +1,19 @@
 version: &base
-  latest_version: '1.23'
+  latest_version: '1.24'
   upgrade_url: http://my-card.in/roid/latest/MC_YGORoid.apk
 
 zh:
   <<: *base
-  desc: 1. 下载图片速度提升，支持后台下载。\n2. 增加繁体中文支持。
+  desc: 1. 支持组卡时按条件检索卡片。\n2. 增加日文系统支持。
 
 en:
   <<: *base
-  desc: 1. Speed up download pictures.\n2. Support chinese(TW).
+  desc: 1. Can do filter when search card in deck builder.\n2. Support Japanese.
 
 jp:
   <<: *base
-  desc: 1. 画像ダウンロードの速度を改善。\n2. 中国語（台湾）を支持。
+  desc: 1. カード検索は、条件検索が可能。\n2. 日本語を支持。
 
 zh-TW:
   <<: *base
-  desc: 1. 下載圖片速度提升，支持後臺下載。\n2. 增加繁體中文支持。
+  desc: 1. 支持組卡時按條件檢索卡片。\n2. 增加日文系統支持。
