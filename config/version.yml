@@ -1,19 +1,19 @@
 version: &base
-  latest_version: '1.25'
+  latest_version: '1.30'
   upgrade_url: http://my-card.in/roid/latest/MC_YGORoid.apk
 
 zh:
   <<: *base
-  desc: 1. 增加自动更新数据库的开关。\n2. 优化内存使用。
+  desc: 1. 修改场地布局，新增摇摆区。\n2. 更好用的双人LP计算器。
 
 en:
   <<: *base
-  desc: 1. Add a feture toggle for auto upgrade database.\n2. Optimize memory use.
+  desc: 1. Change the duel fields, add the p-zone.\n2. New LP calculator for two player.
 
 jp:
   <<: *base
-  desc: 1. カード情報自動更新のスイーチを増加する。\n2. メモリーの使用を優化する。
+  desc: 1. あたらしいフールド、Pゾーンを増加する。\n2. 二人用のLPカルキュレーター。
 
 zh-TW:
   <<: *base
-  desc: 1. 增加自動更新數據庫的開關。\n2. 優化內存使用。
+  desc: 1. 修改場地佈局，新增搖擺區。\n2. 更好用的雙人LP計算器。
