@@ -1,19 +1,19 @@
 version: &base
-  latest_version: '1.30'
+  latest_version: '1.31'
   upgrade_url: http://my-card.in/roid/latest/MC_YGORoid.apk
 
 zh:
   <<: *base
-  desc: 1. 修改场地布局，新增摇摆区。\n2. 更好用的双人LP计算器。
+  desc: 1. 修正换龙族。\n2. 修正灵摆怪兽等级。
 
 en:
   <<: *base
-  desc: 1. Change the duel fields, add the p-zone.\n2. New LP calculator for two player.
+  desc: 1. Fix WYRMS.\n2. Fix level of p-monster.
 
 jp:
   <<: *base
-  desc: 1. あたらしいフールド、Pゾーンを増加する。\n2. 二人用のLPカルキュレーター。
+  desc: 1. 幻竜を修正。\n2. Pモンスターを修正。
 
 zh-TW:
   <<: *base
-  desc: 1. 修改場地佈局，新增搖擺區。\n2. 更好用的雙人LP計算器。
+  desc: 1. 修正幻龍族。\n2. 修正擺動怪獸等級。
